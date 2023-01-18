@@ -11,6 +11,21 @@ outcomes = [
     (3, 2, "Player 1 wins"),
     (3, 3, "draw"),
 ]
+def print_scissors():
+    print("   ___    ___")
+    print(" //   \\//   \\")
+    print(" \\___//\\___//")
+    print("     ( OO ) ")
+    print("     / /\ \")
+    print("    / /  \ \")
+    print("   / /    \ \")
+    print("  / /      \ \")
+    print("  \/        \/")
+
+
+
+print_scissors()
+
 
 def determine_outcome(player1, player2):
     for outcome in outcomes:
@@ -29,7 +44,13 @@ def player2_input():
     return int(input("""Player 2: please select a number: (1) rock, (2) paper, (3) scissors, (4) restart, (5) quit. 
     >"""))
 
-def rock_paper_scissors(win, loss, draw, player_select):
+def rock_paper_scissors():
+
+    win = 0
+    loss = 0
+    draw = 0
+
+    player_select = input("Single player or multiplayer?").lower()
 
     while True:
 
@@ -67,14 +88,10 @@ def rock_paper_scissors(win, loss, draw, player_select):
         
 #################################################################################################################
 
-win = 0
-loss = 0
-draw = 0
 
 play = input("Do you want to play a game you sicko? ").lower()
 
 if play == "yes":
-    player_select = input("Single player or multiplayer? ").lower()
-    rock_paper_scissors(win, loss, draw, player_select)
+    rock_paper_scissors()
 else:
     print("I didn't want to play either.")
