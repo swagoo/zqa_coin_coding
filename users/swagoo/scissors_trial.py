@@ -4,15 +4,14 @@ def scoreboard(win, loss, draw):
 
 def print_scissors():
     print("   ___    ___")
-    print(" //   \\//   \\")
-    print(" \\___//\\___//")
+    print('  //   \\//   \\')
+    print("  \\___//\\___//")
     print("     ( OO ) ")
-    print("     / /\ \")
-    print("    / /  \ \")
-    print("   / /    \ \")
-    print("  / /      \ \")
+    print("     / /\ \\")
+    print("    / /  \ \\")
+    print("   / /    \ \\")
+    print('  / /      \ \\')
     print("  \/        \/")
-
 
 
 
@@ -53,7 +52,7 @@ def rock_paper_scissors(win, loss, draw, player_select):
             draw += 1
             scoreboard(win, loss, draw)
         elif player1 == 2 and player2 == 3:
-            print("lose to" + print_scissors)
+            print_scissors
             loss += 1
             scoreboard(win, loss, draw)
 
@@ -62,7 +61,7 @@ def rock_paper_scissors(win, loss, draw, player_select):
             loss += 1
             scoreboard(win, loss, draw)
         elif player1 == 3 and player2 == 2:
-            print("win with" + print_scissors)
+            print_scissors
             win += 1
             scoreboard(win, loss, draw)
         elif player1 == 3 and player2 == 3:

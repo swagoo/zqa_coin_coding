@@ -11,20 +11,17 @@ outcomes = [
     (3, 2, "Player 1 wins"),
     (3, 3, "draw"),
 ]
-def print_scissors():
-    print("   ___    ___")
-    print(" //   \\//   \\")
-    print(" \\___//\\___//")
-    print("     ( OO ) ")
-    print("     / /\ \")
-    print("    / /  \ \")
-    print("   / /    \ \")
-    print("  / /      \ \")
-    print("  \/        \/")
+#def print_scissors():
+#    print("   ___    ___")
+#    print('  //   \\//   \\')
+#    print("  \\___//\\___//")
+#    print("     ( OO ) ")
+#    print("     / /\ \\")
+#    print("    / /  \ \\")
+#    print("   / /    \ \\")
+#    print('  / /      \ \\')
+#    print("  \/        \/")
 
-
-
-print_scissors()
 
 
 def determine_outcome(player1, player2):
